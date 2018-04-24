@@ -4,14 +4,13 @@
 #
 Name     : jupyterlab
 Version  : 0.32.0
-Release  : 2
+Release  : 3
 URL      : https://files.pythonhosted.org/packages/74/12/a538a83a9623e8807b5911228f81c902e2fe9479774e8f0d3ee36edf1345/jupyterlab-0.32.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/74/12/a538a83a9623e8807b5911228f81c902e2fe9479774e8f0d3ee36edf1345/jupyterlab-0.32.0.tar.gz
 Summary  : The JupyterLab notebook server extension.
 Group    : Development/Tools
 License  : BSD-3-Clause
 Requires: jupyterlab-bin
-Requires: jupyterlab-config
 Requires: jupyterlab-python3
 Requires: jupyterlab-data
 Requires: jupyterlab-python
@@ -34,18 +33,9 @@ This is a beta release of JupyterLab.
 Summary: bin components for the jupyterlab package.
 Group: Binaries
 Requires: jupyterlab-data
-Requires: jupyterlab-config
 
 %description bin
 bin components for the jupyterlab package.
-
-
-%package config
-Summary: config components for the jupyterlab package.
-Group: Default
-
-%description config
-config components for the jupyterlab package.
 
 
 %package data
@@ -54,15 +44,6 @@ Group: Data
 
 %description data
 data components for the jupyterlab package.
-
-
-%package legacypython
-Summary: legacypython components for the jupyterlab package.
-Group: Default
-Requires: python-core
-
-%description legacypython
-legacypython components for the jupyterlab package.
 
 
 %package python
@@ -91,18 +72,19 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1523926917
-python2 setup.py build -b py2
+export SOURCE_DATE_EPOCH=1524574764
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1523926917
 rm -rf %{buildroot}
-python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
-python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
+python3 -tt setup.py build -b py3 install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
 echo ----[ mark ]----
+## make_install_append content
+mkdir -p  %{buildroot}/usr/share/jupyter/
+mv %{buildroot}/usr/etc/jupyter/jupyter_notebook_config.d %{buildroot}/usr/share/jupyter/
+## make_install_append end
 
 %files
 %defattr(-,root,root,-)
@@ -114,12 +96,9 @@ echo ----[ mark ]----
 /usr/bin/jupyter-labextension
 /usr/bin/jupyter-labhub
 
-%files config
-%defattr(-,root,root,-)
-%config /usr/etc/jupyter/jupyter_notebook_config.d/jupyterlab.json
-
 %files data
 %defattr(-,root,root,-)
+/usr/share/jupyter/jupyter_notebook_config.d/jupyterlab.json
 /usr/share/jupyter/lab/schemas/@jupyterlab/apputils-extension/package.json
 /usr/share/jupyter/lab/schemas/@jupyterlab/apputils-extension/themes.json
 /usr/share/jupyter/lab/schemas/@jupyterlab/codemirror-extension/commands.json
@@ -157,10 +136,6 @@ echo ----[ mark ]----
 /usr/share/jupyter/lab/themes/@jupyterlab/theme-light-extension/5a0856eb52623ae94b09dbbf31a27b95.ttf
 /usr/share/jupyter/lab/themes/@jupyterlab/theme-light-extension/index.css
 /usr/share/jupyter/lab/themes/@jupyterlab/theme-light-extension/package.json
-
-%files legacypython
-%defattr(-,root,root,-)
-/usr/lib/python2*/*
 
 %files python
 %defattr(-,root,root,-)
