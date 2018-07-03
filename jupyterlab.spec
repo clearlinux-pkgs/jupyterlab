@@ -4,7 +4,7 @@
 #
 Name     : jupyterlab
 Version  : 0.32.1
-Release  : 9
+Release  : 10
 URL      : https://files.pythonhosted.org/packages/57/5e/07f295eae48821975ed5a31b9e5e8fede9961fbe9fac919cfc555af392f1/jupyterlab-0.32.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/57/5e/07f295eae48821975ed5a31b9e5e8fede9961fbe9fac919cfc555af392f1/jupyterlab-0.32.1.tar.gz
 Summary  : The JupyterLab notebook server extension.
