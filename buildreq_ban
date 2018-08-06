@@ -2,3 +2,4 @@
 # undesirable. One entry per line, no whitespace.
 futures;python_version
 subprocess32;python_version
+subprocess32
