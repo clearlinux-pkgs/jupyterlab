@@ -4,7 +4,7 @@
 #
 Name     : jupyterlab
 Version  : 0.34.7
-Release  : 27
+Release  : 28
 URL      : https://files.pythonhosted.org/packages/77/74/ae9f7a841763e4bf9350b59174ac7459d9914b1684b50652fc17f2e67ac0/jupyterlab-0.34.7.tar.gz
 Source0  : https://files.pythonhosted.org/packages/77/74/ae9f7a841763e4bf9350b59174ac7459d9914b1684b50652fc17f2e67ac0/jupyterlab-0.34.7.tar.gz
 Summary  : The JupyterLab notebook server extension.
@@ -76,7 +76,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1535726769
+export SOURCE_DATE_EPOCH=1535728971
 python3 setup.py build -b py3
 
 %install
