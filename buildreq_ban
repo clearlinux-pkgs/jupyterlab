@@ -3,3 +3,4 @@
 futures;python_version
 subprocess32;python_version
 subprocess32
+jupyterlab_server~
