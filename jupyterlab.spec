@@ -4,7 +4,7 @@
 #
 Name     : jupyterlab
 Version  : 1.1.1
-Release  : 46
+Release  : 47
 URL      : https://files.pythonhosted.org/packages/a1/c7/9273da70b4b75d1d3ee2a2e003bb99016a0c5716c573c7669b6ba732aad8/jupyterlab-1.1.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/a1/c7/9273da70b4b75d1d3ee2a2e003bb99016a0c5716c573c7669b6ba732aad8/jupyterlab-1.1.1.tar.gz
 Summary  : JupyterLab computational environment
@@ -16,10 +16,12 @@ Requires: jupyterlab-license = %{version}-%{release}
 Requires: jupyterlab-python = %{version}-%{release}
 Requires: jupyterlab-python3 = %{version}-%{release}
 Requires: Jinja2
+Requires: jupyterlab_server
 Requires: notebook
 Requires: tornado
 BuildRequires : Jinja2
 BuildRequires : buildreq-distutils3
+BuildRequires : jupyterlab_server
 BuildRequires : notebook
 BuildRequires : tornado
 
@@ -83,7 +85,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1567882576
+export SOURCE_DATE_EPOCH=1567882697
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
