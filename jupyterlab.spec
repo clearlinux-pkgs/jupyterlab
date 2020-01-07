@@ -4,7 +4,7 @@
 #
 Name     : jupyterlab
 Version  : 1.2.4
-Release  : 57
+Release  : 58
 URL      : https://files.pythonhosted.org/packages/a7/ec/9f89fef20af3d22319c9dffd96187a49b4895bfab5182b0ce4932bb31914/jupyterlab-1.2.4.tar.gz
 Source0  : https://files.pythonhosted.org/packages/a7/ec/9f89fef20af3d22319c9dffd96187a49b4895bfab5182b0ce4932bb31914/jupyterlab-1.2.4.tar.gz
 Summary  : JupyterLab computational environment
