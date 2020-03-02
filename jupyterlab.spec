@@ -4,7 +4,7 @@
 #
 Name     : jupyterlab
 Version  : 2.0.0
-Release  : 61
+Release  : 62
 URL      : https://files.pythonhosted.org/packages/b6/8f/33ee66aa3687ab6170a0b808bc1dfc42b67f27173b16c2b24b73029d4787/jupyterlab-2.0.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/b6/8f/33ee66aa3687ab6170a0b808bc1dfc42b67f27173b16c2b24b73029d4787/jupyterlab-2.0.0.tar.gz
 Summary  : JupyterLab computational environment
@@ -247,7 +247,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1583160919
+export SOURCE_DATE_EPOCH=1583163081
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
