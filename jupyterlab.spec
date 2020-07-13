@@ -4,7 +4,7 @@
 #
 Name     : jupyterlab
 Version  : 2.1.5
-Release  : 69
+Release  : 70
 URL      : https://files.pythonhosted.org/packages/7d/38/d087ace0fee69ea7da3e1bc20c84321a4cde6c8b24629afce247ac828149/jupyterlab-2.1.5.tar.gz
 Source0  : https://files.pythonhosted.org/packages/7d/38/d087ace0fee69ea7da3e1bc20c84321a4cde6c8b24629afce247ac828149/jupyterlab-2.1.5.tar.gz
 Summary  : The JupyterLab notebook server extension.
