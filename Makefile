@@ -1,5 +1,5 @@
 PKG_NAME := jupyterlab
-URL = https://files.pythonhosted.org/packages/b6/6a/d4ad207b17c0861a8c0e829a2284e97ecc182649b408fc7ece05181e64bb/jupyterlab-2.2.4.tar.gz
+URL = https://files.pythonhosted.org/packages/9c/a3/146fb067d43ecd54117770014346866d017cd54011e0b4f79d9ad3b8f9f8/jupyterlab-2.2.5.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
