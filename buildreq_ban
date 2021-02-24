@@ -6,3 +6,4 @@ subprocess32
 jupyterlab_server~
 nbclassic~
 jupyter_server~
+jupyter_packaging~
