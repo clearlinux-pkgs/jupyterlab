@@ -4,7 +4,7 @@
 #
 Name     : jupyterlab
 Version  : 3.0.12
-Release  : 96
+Release  : 97
 URL      : https://files.pythonhosted.org/packages/70/35/bed78252b9490223c8f12b8be7793023fc7d115a6a08a41094bb03df2eac/jupyterlab-3.0.12.tar.gz
 Source0  : https://files.pythonhosted.org/packages/70/35/bed78252b9490223c8f12b8be7793023fc7d115a6a08a41094bb03df2eac/jupyterlab-3.0.12.tar.gz
 Summary  : The JupyterLab server extension.
@@ -29,6 +29,7 @@ BuildRequires : jupyter_core
 BuildRequires : jupyterlab_server
 BuildRequires : packaging
 BuildRequires : tornado
+Patch1: deps.patch
 
 %description
 **[Installation](#installation)** |
@@ -95,13 +96,14 @@ python3 components for the jupyterlab package.
 %prep
 %setup -q -n jupyterlab-3.0.12
 cd %{_builddir}/jupyterlab-3.0.12
+%patch1 -p1
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1616424931
+export SOURCE_DATE_EPOCH=1616688041
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib

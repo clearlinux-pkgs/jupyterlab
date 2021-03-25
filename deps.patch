@@ -1,0 +1,22 @@
+--- jupyterlab-3.0.12/jupyterlab.egg-info/requires.txt~	2021-03-19 20:22:47.000000000 +0000
++++ jupyterlab-3.0.12/jupyterlab.egg-info/requires.txt	2021-03-25 15:58:44.993941628 +0000
+@@ -2,7 +2,7 @@
+ packaging
+ tornado>=6.1.0
+ jupyter_core
+-jupyter_packaging~=0.7.3
++jupyter_packaging
+ jupyterlab_server~=2.3
+ jupyter_server~=1.4
+ nbclassic~=0.2
+--- jupyterlab-3.0.12/setup.py~	2021-03-19 20:04:50.000000000 +0000
++++ jupyterlab-3.0.12/setup.py	2021-03-25 15:59:04.238941360 +0000
+@@ -146,7 +146,7 @@
+     'packaging',
+     'tornado>=6.1.0',
+     'jupyter_core',
+-    'jupyter_packaging~=0.7.3',
++    'jupyter_packaging',
+     'jupyterlab_server~=2.3',
+     'jupyter_server~=1.4',
+     'nbclassic~=0.2',
