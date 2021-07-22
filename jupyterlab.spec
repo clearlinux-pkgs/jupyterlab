@@ -4,7 +4,7 @@
 #
 Name     : jupyterlab
 Version  : 3.0.16
-Release  : 104
+Release  : 105
 URL      : https://files.pythonhosted.org/packages/85/17/4c6b94f3e28f53acc2b18e6d234a6ce8d274ac52cc4e6870a096695b38e3/jupyterlab-3.0.16.tar.gz
 Source0  : https://files.pythonhosted.org/packages/85/17/4c6b94f3e28f53acc2b18e6d234a6ce8d274ac52cc4e6870a096695b38e3/jupyterlab-3.0.16.tar.gz
 Summary  : JupyterLab computational environment
