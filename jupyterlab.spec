@@ -4,7 +4,7 @@
 #
 Name     : jupyterlab
 Version  : 3.2.1
-Release  : 122
+Release  : 123
 URL      : https://files.pythonhosted.org/packages/9e/17/b68686a375a723412ce6bcc3cfd4cb97865e7d38e3f35f88371ed2b83ef3/jupyterlab-3.2.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/9e/17/b68686a375a723412ce6bcc3cfd4cb97865e7d38e3f35f88371ed2b83ef3/jupyterlab-3.2.1.tar.gz
 Summary  : JupyterLab computational environment
