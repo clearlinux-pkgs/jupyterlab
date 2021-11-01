@@ -4,7 +4,7 @@
 #
 Name     : jupyterlab
 Version  : 3.2.1
-Release  : 125
+Release  : 126
 URL      : https://files.pythonhosted.org/packages/9e/17/b68686a375a723412ce6bcc3cfd4cb97865e7d38e3f35f88371ed2b83ef3/jupyterlab-3.2.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/9e/17/b68686a375a723412ce6bcc3cfd4cb97865e7d38e3f35f88371ed2b83ef3/jupyterlab-3.2.1.tar.gz
 Summary  : JupyterLab computational environment
@@ -99,7 +99,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1634765924
+export SOURCE_DATE_EPOCH=1635745519
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
