@@ -1,0 +1,9 @@
+3.2.5
+pypi(ipython)
+pypi(jinja2)
+pypi(jupyter_core)
+pypi(jupyter_server)
+pypi(jupyterlab_server)
+pypi(nbclassic)
+pypi(packaging)
+pypi(tornado)
